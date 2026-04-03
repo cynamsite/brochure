@@ -1,48 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cynam Services | AI & IT Infrastructure</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Cynam Services | Strategic IT & AI Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.1) 0%, transparent 50%); }
+    </style>
 </head>
-<body>
-    <nav>
-        <div class="logo">CYNAM<span>SERVICES</span></div>
-        <div class="contact-links">
-            <a href="mailto:info@cynam.services">Contact Us</a>
+<body class="bg-slate-950 text-slate-200 antialiased">
+
+    <nav class="fixed w-full z-50 border-b border-white/5 glass px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-extrabold tracking-tighter text-white">
+                CYNAM<span class="text-blue-500">SERVICES</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#services" class="hover:text-blue-400 transition">Services</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+            <a href="mailto:inquiry@cynam.services" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded-full text-xs font-bold transition">
+                GET STARTED
+            </a>
         </div>
     </nav>
 
-    <header class="hero">
-        <h1>Autonomous AI & Secure Infrastructure</h1>
-        <p>Specializing in Proxmox virtualization, OPNsense hardening, and local LLM agentic workflows for modern enterprises.</p>
-        <a href="mailto:contact@cynam.services" class="cta-button">Get Started</a>
-    </header>
-
-    <main id="services">
-        <section class="services-grid">
-            <div class="card">
-                <h3>Infrastructure</h3>
-                <p>Enterprise-grade virtualization using Proxmox and VMware. ZFS storage optimization and high-availability cluster management.</p>
+    <section class="relative min-h-screen flex items-center justify-center pt-20 hero-gradient">
+        <div class="max-w-4xl px-6 text-center">
+            <div class="inline-block px-3 py-1 mb-6 border border-blue-500/30 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold tracking-widest uppercase">
+                Enterprise Technology Consulting
             </div>
-            <div class="card">
-                <h3>AI Workflows</h3>
-                <p>Local AI deployment via Ollama and LiteLLM. Custom agentic frameworks for data scraping and automated trading systems.</p>
-            </div>
-            <div class="card">
-                <h3>Network Security</h3>
-                <p>Hardened OPNsense/pfSense configurations, WireGuard VPNs, and advanced secret management with SOPS and Age.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Cynam Services LLC. Hunterdon County, New Jersey.</p>
-        <div class="contact-links" style="margin-top: 1rem;">
-            <a href="mailto:info@cynam.services">info@cynam.services</a> | 
-            <a href="mailto:contact@cynam.services">contact@cynam.services</a>
-        </div>
-    </footer>
-</body>
-</html>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight leading-tight">
+                Strategic IT Design & <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+                    AI Workflow Integration
+                </span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-12 leading-relaxed max-w-2xl mx-auto">
+                Bridging the gap between complex infrastructure and operational efficiency through bespoke
